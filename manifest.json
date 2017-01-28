@@ -1,0 +1,14 @@
+{
+  "name": "Goodreads - Helmet search",
+  "description": "Searches for Goodreads listings on Helsinki Metropolitan area library (Helmet)",
+  "version": "0.2",
+  "manifest_version": 2,
+  "content_scripts": [{
+      "matches": [
+				"https://*.goodreads.com/book/show/*",
+				"https://*.goodreads.com/review/list/*"
+			],
+      "js": ["script.js"]
+  }],
+  "web_accessible_resources": ["script.js"]
+}
