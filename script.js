@@ -10,13 +10,14 @@ function createLinkElement(author, title) {
     .replace('{0}', sanitizedAuthor)
     .replace('{1}', sanitizedTitle);
 
-  let linkButton = document.createElement('a');
-  linkButton.setAttribute('href', searchUri);
-  linkButton.setAttribute('style', 'font-size: x-small; color:red;');
-  linkButton.innerHTML = _buttonTitle;
+  let link = document.createElement('a');
+  link.setAttribute('href', searchUri);
+  link.setAttribute('style', 'font-size: x-small; color:red;');
+  link.innerHTML = _buttonTitle;
 
-  return linkButton;
+  return link;
 }
+
 // single book view
 function singleView() {
   const titleElement = document.getElementById('bookTitle');
