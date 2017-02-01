@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Test Extension Options</title>
+		<style type="text/css">
+			body { 
+				padding: 10px;
+			}
+			input[type='checkbox'] {
+				margin: 10px 10px 10px 0;
+			}
+			#status {
+				height: 10px;
+				color: seagreen;
+				font-weight: bolder;
+			}
+			#saveDiv {
+				padding: 10px;
+    		margin: 10px 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		Enable libraries:
+		<p>
+			<input type="checkbox" id="helsinki" value="helsinki"><label>Helsinki</label>
+			<br>
+			<input type="checkbox" id="tampere" value="tampere"><label>Tampere</label>
+		</p>
+		<div id="status"></div>
+
+		<div id="saveDiv">
+			<button id="saveGreadsOptions">Save</button>
+		</div>
+
+		<script src="options.js"></script>
+
+	</body>
+</html>

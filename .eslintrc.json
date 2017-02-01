@@ -2,8 +2,10 @@
     "env": {
         "browser": true,
         "commonjs": true,
-        "es6": true,
-        "node": true
+        "es6": true
+    },
+    "globals": {
+        "chrome": false
     },
     "parserOptions": {
         "ecmaFeatures": {
