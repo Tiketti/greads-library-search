@@ -20,6 +20,10 @@ Download from [Releases](https://github.com/Tiketti/greads-library-search/releas
 
 Download `.crx` file. In Chrome Extensions settings (chrome://extensions/) enable `Developer Mode` and drag-and-drop extension on the page. For more information please refer to e.g. [this resource](https://blog.hunter.io/install-chrome-extension-manually/).
 
+## Known issues
+
+Tampere library uses cookies to store and display previous search term. Therefore search and search box appear out of sync.
+
 ## Problems?
 
 Please file an issue or pull request. I'd be happy to make fixes or fill requests.
