@@ -1,6 +1,6 @@
 # Goodreads library search Chrome extension
 
-Chrome browser extension to search Helsinki metropolitan area ([Helmet](https://www.helmet.fi)) or Tampere/Pirkanmaan kirjastot ([Piki](https://piki.verkkokirjasto.fi/)) library from [Goodreads](https://www.goodreads.com/). Extension adds "Search Helmet for this book" or "Search Piki for this book" link on **list view** and **book details** pages.
+Chrome browser extension to search Helsinki metropolitan area ([Helmet](https://www.helmet.fi)) physical books, e-books in [Helmet Overdrive](https://helmet.overdrive.com) or Tampere/Pirkanmaan kirjastot ([Piki](https://piki.verkkokirjasto.fi/)) library from [Goodreads](https://www.goodreads.com/). Extension adds search links for selected libraries on **list view** and **book details** pages.
 
 ![img](http://i.imgur.com/3JSSnio.png)
 
@@ -10,7 +10,7 @@ Chrome browser extension to search Helsinki metropolitan area ([Helmet](https://
 
 While viewing extension in Chrome Extensions settings (chrome://extensions/) click on Options link and check libraries you wish to enable.
 
-![img](http://i.imgur.com/YCJ31UK.jpg)
+![img](http://i.imgur.com/nksoPK4.png)
 
 ## Download
 
