@@ -18,15 +18,26 @@
 				padding: 10px;
     		margin: 10px 0;
 			}
+			.libraryName {
+				font-size: 1.1em;
+				font-weight: bold;
+			}
+			.libraryInfo {
+				font-size: 0.9em;
+			}
 		</style>
 	</head>
 
 	<body>
 		Enable libraries:
 		<p>
-			<input type="checkbox" id="helsinki" value="helsinki"><label>Helsinki</label>
+			<input type="checkbox" id="helsinki" value="helsinki"><label class="libraryName">Helsinki</label>
+			<span class="libraryInfo">Physical books</span>
 			<br>
-			<input type="checkbox" id="tampere" value="tampere"><label>Tampere</label>
+			<input type="checkbox" id="helsinkiOverdrive" value="helsinkiOverdrive"><label class="libraryName">Helsinki Overdrive</label>
+			<span class="libraryInfo">e-books</span>
+			<br>
+			<input type="checkbox" id="tampere" value="tampere"><label class="libraryName">Tampere</label>
 		</p>
 		<div id="status"></div>
 

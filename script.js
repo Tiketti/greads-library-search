@@ -7,6 +7,10 @@ const _libraries = {
     baseLink: 'https://piki.verkkokirjasto.fi/web/arena/search?p_auth=jHgv3Osu&p_p_id=searchResult_WAR_arenaportlets&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&p_r_p_687834046_facet_queries=mediaClass_facet%3Dbook&p_r_p_687834046_search_type=solr&p_r_p_687834046_search_query={0}+{1}',
     linkTitle: '[Search Piki for this book]',
   },
+  helsinkiOverdrive: {
+    baseLink: 'https://helmet.overdrive.com/search?query={0}+{1}',
+    linkTitle: '[Search Helmet Overdrive for this book]',
+  },
 };
 let _selectedLibraries = [];
 

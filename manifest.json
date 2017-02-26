@@ -1,7 +1,7 @@
 {
   "name": "Goodreads - Helmet search",
   "description": "Searches for Goodreads listings on Helsinki Metropolitan area library (Helmet) and Tampere/Pirkanmaan kirjastot (Piki)",
-  "version": "0.4",
+  "version": "0.6",
   "author": "Perttu Haliseva",
   "homepage_url": "https://github.com/Tiketti/greads-library-search", 
   "manifest_version": 2,
