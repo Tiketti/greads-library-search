@@ -12,9 +12,9 @@ const _libraries = {
     linkTitle: '[Search Helmet Overdrive for this book]',
   },
 };
-let _selectedLibraries = [];
+const _selectedLibraries = [];
 
-function createLinkElement(libraryKey, author, title) {
+const createLinkElement = (libraryKey, author, title) => {
   const removables = /[()*]/g;
   const replaceables = /[]/g;
 
@@ -25,16 +25,16 @@ function createLinkElement(libraryKey, author, title) {
     .replace('{0}', sanitizedAuthor)
     .replace('{1}', sanitizedTitle);
 
-  let link = document.createElement('a');
+  const link = document.createElement('a');
   link.setAttribute('href', searchUri);
   link.setAttribute('style', 'font-size: x-small; color:red; margin-left: 5px;');
   link.innerHTML = _libraries[libraryKey].linkTitle;
 
   return link;
-}
+};
 
 // single book view
-function singleView() {
+const singleView = () => {
   const titleElement = document.getElementById('bookTitle');
   const authorNames = Array.from(
     document.querySelectorAll('.authorName > span'))
@@ -46,12 +46,12 @@ function singleView() {
   _selectedLibraries.forEach(libraryKey => {
     const linkElement = createLinkElement(libraryKey, authorNames, bookTitle);
     titleElement.appendChild(linkElement);
-  })
-}  
+  });
+};  
 
 // list view
-function listView() {
-  var bookElements = Array.from(document.querySelectorAll('#booksBody > tr.bookalike'));
+const listView = () => {
+  const bookElements = Array.from(document.querySelectorAll('#booksBody > tr.bookalike'));
   bookElements.forEach((bookElement) => {
     _selectedLibraries.forEach(libraryKey => {
       const titleElement = bookElement.querySelector('.title > .value');
@@ -62,16 +62,18 @@ function listView() {
       titleElement.appendChild(linkElement);
     });
   });
-}  
+};
 
 const page = window.location.toString();
 
-getSelectedLibraries(function (libraries) {
+// defined in options/options.js, included by extension framework
+// eslint-disable-next-line no-undef
+getSelectedLibraries().then((libraries) => {
   Object.keys(libraries).forEach((key, index) => {
     if (Object.values(libraries)[index]) {
       _selectedLibraries.push(key);
     }
-  })
+  });
 
   if (page.indexOf('/book/show') > 0) {
     singleView();  
@@ -80,4 +82,4 @@ getSelectedLibraries(function (libraries) {
   if (page.indexOf('/review/list') > 0) {
     listView();
   }
-})
+});
