@@ -53,11 +53,11 @@ const singleView = () => {
 const listView = () => {
   const bookElements = Array.from(document.querySelectorAll('#booksBody > tr.bookalike'));
   bookElements.forEach((bookElement) => {
-    _selectedLibraries.forEach(libraryKey => {
-      const titleElement = bookElement.querySelector('.title > .value');
-      const bookTitle = titleElement.innerText;
-      const author = bookElement.querySelector('.author > .value').innerText;
+    const titleElement = bookElement.querySelector('.title > .value');
+    const bookTitle = titleElement.innerText;
+    const author = bookElement.querySelector('.author > .value').innerText;
 
+    _selectedLibraries.forEach(libraryKey => {
       const linkElement = createLinkElement(libraryKey, author, bookTitle);
       titleElement.appendChild(linkElement);
     });
