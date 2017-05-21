@@ -1,25 +1,32 @@
 {
     "env": {
-        "browser": true,
-        "commonjs": true,
-        "es6": true
+      "browser": true,
+      "commonjs": true,
+      "es6": true
     },
     "globals": {
-        "chrome": false
+      "chrome": false
     },
     "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "sourceType": "module"
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "sourceType": "module"
     },
     "rules": {
-        "no-const-assign": "warn",
-        "no-this-before-super": "warn",
-        "no-undef": "warn",
-        "no-unreachable": "warn",
-        "no-unused-vars": "warn",
-        "constructor-super": "warn",
-        "valid-typeof": "warn"
+      "comma-dangle": ["warn", "always-multiline"],
+      "indent": ["warn", 2],
+      "no-const-assign": "warn",
+      "no-extra-semi": "error",
+      "no-this-before-super": "warn",
+      "no-undef": "warn",
+      "no-use-before-define": "error",
+      "no-unreachable": "warn",
+      "no-unused-vars": "warn",
+      "no-var": "error",
+      "prefer-arrow-callback": "warn",
+      "prefer-const": "error",
+      "semi": "error",
+      "valid-typeof": "warn"
     }
 }
