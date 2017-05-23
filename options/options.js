@@ -2,7 +2,7 @@ const saveOptions = () => {
   const helsinki = document.getElementById('helsinki').checked;
   const tampere = document.getElementById('tampere').checked;
   const helsinkiOverdrive = document.getElementById('helsinkiOverdrive').checked;
-	
+
   chrome.storage.sync.set({
     helsinki,
     tampere,
@@ -26,7 +26,7 @@ const getSelectedLibraries = () => (
       resolve(items);
     });
   })
-);  
+);
 
 const restoreOptions = () => {
   getSelectedLibraries().then((items) => {
@@ -36,8 +36,9 @@ const restoreOptions = () => {
   });
 };
 
-document.addEventListener("DOMContentLoaded", restoreOptions);
 const saveButton = document.getElementById('saveGreadsOptions');
 if (saveButton) {
   saveButton.addEventListener('click', saveOptions);
 }
+
+document.addEventListener("DOMContentLoaded", restoreOptions);

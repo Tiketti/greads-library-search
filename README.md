@@ -20,6 +20,19 @@ Download from [Releases](https://github.com/Tiketti/greads-library-search/releas
 
 Download `.crx` file. In Chrome Extensions settings (chrome://extensions/) enable `Developer Mode` and drag-and-drop extension on the page. For more information please refer to e.g. [this resource](https://blog.hunter.io/install-chrome-extension-manually/).
 
+## Running tests
+
+```
+# install `karma-cli` globally
+npm install -g karma-cli
+
+# install rest of the dependencies
+npm install
+
+# run tests
+npm test
+```
+
 ## Known issues
 
 Tampere library uses cookies to store and display previous search term. Therefore search and search box appear out of sync.

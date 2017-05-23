@@ -1,0 +1,36 @@
+{
+  "name": "greads-library-search",
+  "version": "0.7.0",
+  "description": "Chrome extensin to search Helsinki/Tampere library collection from Goodreads.com",
+  "main": "script.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine": "2.6.0",
+    "jasmine-core": "2.6.2",
+    "karma": "1.7.0",
+    "karma-jasmine": "1.1.0",
+    "karma-jasmine-html-reporter": "0.2.2",
+    "karma-spec-reporter": "0.0.31"
+  },
+  "scripts": {
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tiketti/greads-library-search.git"
+  },
+  "keywords": [
+    "goodreads",
+    "chrome",
+    "extension",
+    "book",
+    "books",
+    "library"
+  ],
+  "author": "Perttu Haliseva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tiketti/greads-library-search/issues"
+  },
+  "homepage": "https://github.com/Tiketti/greads-library-search#readme"
+}
