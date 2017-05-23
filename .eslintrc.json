@@ -2,15 +2,13 @@
     "env": {
       "browser": true,
       "commonjs": true,
-      "es6": true
+      "es6": true,
+      "jasmine": true
     },
     "globals": {
       "chrome": false
     },
     "parserOptions": {
-      "ecmaFeatures": {
-        "jsx": true
-      },
       "sourceType": "module"
     },
     "rules": {
@@ -18,6 +16,8 @@
       "indent": ["warn", 2],
       "no-const-assign": "warn",
       "no-extra-semi": "error",
+      "no-multiple-empty-lines": ["warn", {"max": 1} ],
+      "no-trailing-spaces": "warn",
       "no-this-before-super": "warn",
       "no-undef": "warn",
       "no-use-before-define": "error",
