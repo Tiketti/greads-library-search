@@ -47,7 +47,7 @@ const singleView = () => {
     const linkElement = createLinkElement(libraryKey, authorNames, bookTitle);
     titleElement.appendChild(linkElement);
   });
-};  
+};
 
 // list view
 const listView = () => {
@@ -66,20 +66,24 @@ const listView = () => {
 
 const page = window.location.toString();
 
-// defined in options/options.js, included by extension framework
-// eslint-disable-next-line no-undef
-getSelectedLibraries().then((libraries) => {
-  Object.keys(libraries).forEach((key, index) => {
-    if (Object.values(libraries)[index]) {
-      _selectedLibraries.push(key);
+const initialize = () => {
+  // defined in options/options.js, included by extension framework
+  // eslint-disable-next-line no-undef
+  getSelectedLibraries().then((libraries) => {
+    Object.keys(libraries).forEach((key, index) => {
+      if (Object.values(libraries)[index]) {
+        _selectedLibraries.push(key);
+      }
+    });
+
+    if (page.indexOf('/book/show') > 0) {
+      singleView();
+    }
+
+    if (page.indexOf('/review/list') > 0) {
+      listView();
     }
   });
+};
 
-  if (page.indexOf('/book/show') > 0) {
-    singleView();  
-  }
-
-  if (page.indexOf('/review/list') > 0) {
-    listView();
-  }
-});
+document.addEventListener("DOMContentLoaded", initialize);
